@@ -1,0 +1,165 @@
+/* ----Travel Guide Grid---- */
+.main_grid {
+    display: grid;
+    grid-template-columns: 30rem 1fr;
+}
+
+
+@media (max-width: 1017px) {
+    .main_grid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+/* -------Header CSS-------- */
+
+.header {
+    padding: 5px;
+    background: #FFF;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+}
+
+.logo {
+    float: left;
+    text-align: center;
+    line-height: 60px;
+    font-size: 25px;
+    padding: 0 20px;
+    color: rgb(91, 58, 235);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+
+nav {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.header-input {
+    padding: 10px 20px;
+    color: rgb(91, 58, 235);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+    border-radius: 5px;
+    outline: none;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 20rem;
+    border: none;
+    border-radius: 55px;
+    margin-top: .8rem;
+}
+
+
+@media (max-width: 768px) {
+    nav.active {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo {
+        text-align: center;
+        margin-left: 5rem;
+    }
+
+    input {
+        margin-bottom: 1rem;
+    }
+}
+
+/* ----------Map--------- */
+.main_map {
+    height: 78vh;
+    width: 90%;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .5);
+    border-radius: 20px;
+    background-color: #f1f1f14c;
+}
+
+
+
+/* --------List---------- */
+
+.list_heading {
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.list_align {
+    display: flex;
+    justify-content: space-around;
+}
+
+.list_align label {
+    color: rgb(91, 58, 235);
+    font-weight: 700;
+}
+
+.list_select {
+    padding: .5rem 4.5rem .5rem .5rem;
+    margin-left: .5rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.list_select:focus {
+    border: none;
+    outline: none;
+}
+
+.list_places {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    min-width: 25rem;
+    max-height: 17rem;
+    overflow-y: scroll;
+    border-radius: 15px;
+}
+
+.list_places:hover {
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, .1);
+    transition: .5s;
+}
+
+.place-details {
+    color: rgb(91, 58, 235);
+    font-size: 1rem;
+    padding: .5rem;
+    padding-left: 1rem;
+    font-weight: 800;
+    border-bottom: 1px solid rgb(217, 217, 217);
+    cursor: pointer;
+}
+
+.place-details li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.place-details:hover {
+    color: rgb(47, 0, 255);
+    transition: .2s;
+}
+
+@media (max-width: 467px) {
+    .list_align {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 2rem;
+    }
+}
